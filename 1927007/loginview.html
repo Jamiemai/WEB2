@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> GEMSTONE STORE</title>
+    <link rel="icon" type="image/png" href="./assets/logo/gem1.png" />
+    <link rel="stylesheet" href="./assets/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/contact/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+  </head>
+  <body>
+    <!-- Jumbotron -->
+    <section class="hero is-fullheight" id="jumbotron">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <!-- Navbar -->
+            <nav class="navbar is-dark" id="navbar">
+              <div class="navbar-brand">
+                <a class="navbar-item animoDoubleDashed" href="index.html">
+                  <img 
+                    src="./assets/logo/gem1.png"
+                    alt="Based on Bulma"
+                    width="28"
+                    height="28"
+                  />   GEMSTONE STORE
+                </a>
+                <div
+                  class="navbar-burger burger"
+                  data-target="navbarExampleTransparentExample"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item animoDoubleDashed" href="index.html"> 
+                    Trang chủ
+                  </a>
+                  <a class="navbar-item animoDoubleDashed" href="about.html">
+                    Giới thiệu
+                  </a>
+                  <a class="navbar-item animoDoubleDashed" href="listing.html">
+                    Bảng giá
+                  </a>
+                  <a class="navbar-item animoDoubleDashed" href="about.html">
+                    Thông tin
+                  </a>
+                </div>
+                <div class="navbar-end">
+                  <a class="navbar-item email" href="#">
+                    <span class="icon" style="margin-right: 10px; width: 20px">
+                      <img src="assets/contact/img/mail.svg" alt="" />
+                    </span>
+                    <span style="font-style: italic; font-size: 0.9em">cuong.mai@hcmut.edu.vn</span>
+                  </a>
+                  <div class="navbar-item">
+                    <div class="field is-grouped">
+                      <p class="control">
+                        <a class="button is-outlined" href="contact.html">
+                          <span class="icon">
+                            <img src="assets/contact/img/phone.svg" alt="" style="width: 15px;"/>
+                          </span>
+                          <span>Liên Hệ</span>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- mai -->
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-end">
+                    <a  class="navbar-item animoDoubleDashed master-admin-btn" style=" @media only screen and (max-width: 1024px) {{display: none;}};">
+                      Login
+                    </a>
+    
+                    <div class="navbar-dropdown" style="background-color: #000000a2; border: solid 1px white;">
+    
+                      <a href="#" class="navbar-item admin" style="color: white;">
+                       Sign in
+                      </a>
+                      <a href="#" class="navbar-item admin" style="color: white;">
+                       Logout
+                      </a>
+                    </div>
+                  </div>
+                  <!-- mai -->
+                </div>
+              </div>
+            </nav>
+        </div>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body hero-body-2">
+            <div class="container has-text-centered">
+              <h1 class="title" style="margin-top: 5rem !important">
+                    Login
+                </h1>
+                <!-- sign up form -->
+
+<form action="#" method="POST" name="login_form" onsubmit="return validate();">
+
+    <div class="columns is-mobile">
+        <div class="column is-4-desktop is-1-mobile is-3-tablet"></div>
+        <div class="column is-4-desktop is-10-mobile is-6-tablet">
+
+
+            <div class="field">
+                <label class="label" style="color: white;" >Username</label>
+                <div class="control has-icons-left has-icons-right ">
+                    <input class="input" type="text" placeholder="Your Username" value="" name="username" id="username">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" style="color: white;" >Password</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="password" placeholder="Your password" value="" name="password" id="password">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-key"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="field is-grouped is-grouped-centered" style="margin-top: 2rem !important">
+                <div class="control property-action">
+                    <button class="button" type="submit" name="login">Login</button>
+                </div>
+            </div><br>
+
+        </div>
+        <div class="column is-4-desktop is-1-mobile is-3-tablet"></div>
+
+    </div>
+</form>
+    <!-- end sign up form -->
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div id="my-bulma-modal-1" class="modal" style="padding-top: 10rem !important;">
+            <!-- If you want to use backgroundDark property, you might add this tag instead of -->
+            <div class="modal-background susmodal-close-btn"></div>
+
+            <!-- Don't change this id: susmodal-content -->
+            <div class="modal-card susmodal-content">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Message</p>
+
+                <!-- Facultative but you can use the class "susmodal-close-btn" on elements for close the modal -->
+                <button
+                  class="delete susmodal-close-btn"
+                  aria-label="close"
+                ></button>
+              </header>
+              <section class="modal-card-body">
+                <!-- <h1><?php if ( isset($data['msg']) ) echo $data['msg']; ?></h1> -->
+              </section>
+              <footer class="modal-card-foot" style="justify-content: flex-end!important;">
+                      <a href="#" class="button is-success" style="background-color: #6349e7;">OK</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+    
+
+    <script>
+        class SUSModal { constructor(t = {}) { if (t = Object.assign({}, { id: null, animation: "fade", animationDuration: 200, width: "400px", height: "auto", backgroundDark: !1, finalPosition: "auto" }, t), this.id = t.id, this.animation = t.animation, this.animationDuration = t.animationDuration, this.width = t.width, this.height = t.height, this.finalPosition = t.finalPosition, this.backgroundDark = t.backgroundDark, this.SUSModal = document.getElementById(this.id), this.SUSModalContent = this.SUSModal.querySelector(".susmodal-content"), this.SUSModalShow = !1, this.focusElementsType = "button, input, a, textarea", this.focusElements = Array.from(this.SUSModalContent.querySelectorAll(this.focusElementsType)), this.stylize(), this.SUSModal.querySelectorAll(".susmodal-close-btn").length > 0) { Array.from(this.SUSModal.querySelectorAll(".susmodal-close-btn")).forEach(t => { t.addEventListener("click", () => { this.hide() }) }) } } show() { this.SUSModal.style.display = "block", this.focusElements[0].focus(), this.SUSModal.removeAttribute("aria-hidden"), this.SUSModal.setAttribute("aria-modal", "true"), this.SUSModalContent.classList.contains("susmodal-content-reverse") && (this.SUSModalContent.classList.remove("susmodal-content-reverse"), this.backgroundDark && document.body.classList.remove("susmodal-body-animation-reverse")), this.SUSModalContent.classList.add("susmodal-animation-" + this.animation), this.backgroundDark && document.body.classList.add("susmodal-body-animation"), window.onkeydown = (t => { this.keydownEvent(t) }), window.onclick = (t => { t.target === this.SUSModal && this.hide() }) } hide() { event.preventDefault(), this.SUSModal.setAttribute("aria-hidden", "true"), this.SUSModal.removeAttribute("aria-modal"), this.SUSModalContent.classList.remove("susmodal-content-animation"), this.SUSModalContent.classList.add("susmodal-content-reverse"), this.backgroundDark && document.body.classList.add("susmodal-body-animation-reverse"), setTimeout(() => { this.SUSModal.style.display = "block" }, this.animationDuration), window.onkeydown = void 0, window.onclick = void 0 } catchFocus(t) { t.preventDefault(); let i = this.focusElements.findIndex(t => t === this.SUSModalContent.querySelector(":focus")); !0 === t.shiftKey ? indexsusmodal-- : i++, i >= this.focusElements.length && (i = 0), i < 0 && (i = this.focusElements.length - 1), this.focusElements[i].focus() } keydownEvent(t) { (this.SUSModal && "Escape" === t.key || "Esc" === t.key) && this.hide(), this.SUSModal && "Tab" === t.key && this.catchFocus(t) } stylize() { let t = "margin:" + this.finalPosition + ";"; this.width && (t += "width:" + this.width + ";"), this.height && (t += "height:" + this.height + ";"), this.animationDuration && (t += "animation-duration:" + this.animationDuration + "ms;"), this.SUSModalContent.style.cssText = t, this.backgroundDark && (document.body.style.cssText = "animation-duration:" + this.animationDuration + "ms;") } };
+
+        const MySUSModal1 = new SUSModal({
+            id: 'my-bulma-modal-1',
+            animation: "top"
+        });
+    </script>
+
+    <?php
+        if (isset($data['show']))
+            echo $data['show'];
+    ?>
+
+    
+    <script type="text/javascript">
+
+    function validate() {
+        let username = document.login_form.username.value;
+        let password = document.login_form.password.value;
+
+        if (username.length < 2 || username.length > 30) {
+            document.login_form.username.focus();
+            return false;
+        }
+
+        if (password.length < 2 || password.length > 30) {
+            document.login_form.password.focus();
+            return false;
+        }
+
+        return true;
+    }
+    </script>
+    <script src="./assets/contact/js/swiper.min.js"></script>
+    <script src="./assets/contact/js/jquery.min.js"></script>
+    <script src="./assets/contact/js/scripts.js"></script>
+</body>
+
+</html>

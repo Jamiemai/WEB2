@@ -1,0 +1,570 @@
+body,
+html {
+  height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Phần Navbar chung với hero */
+
+.hero.is-fullheight {
+  min-height: 50vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* display: block; */
+  transition: top 0.5s, background-color 0.7s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0px 15vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0px;
+  }
+}
+
+/* a.navbar-item {
+  transition: background-color 0.4s;
+  font-weight: 500;
+}
+*/
+a.navbar-item:hover {
+  background-color: transparent !important;
+}
+
+.animoDoubleDashed {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.animoDoubleDashed::after,
+.animoDoubleDashed::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #6449e7;
+  transition: transform 0.2s ease-in-out;
+}
+.animoDoubleDashed::before {
+  top: 0;
+  transform: translateX(-100%);
+}
+.animoDoubleDashed::after {
+  bottom: 0;
+  transform: translateX(100%);
+}
+.animoDoubleDashed:hover::after,
+.animoDoubleDashed:hover::before {
+  transform: translateX(0);
+}
+.animoDoubleDashed:hover {
+  color: #bfb0ff !important;
+}
+
+.navbar-item .button {
+  color: white;
+  background-color: transparent;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.navbar-item .button:hover {
+  background-color: #6449e7;
+  border: 1px solid #6449e7;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar-item.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar-item.email img {
+    /* line-height: 44px; */
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  .navbar-item .button {
+    color: white;
+    background-color: #6449e7;
+    transition: background-color 0.3s, border 0.3s;
+  }
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hero-body {
+  padding: 0px;
+  overflow: hidden;
+  background: url(../img/hero/hero_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.hero-body .title {
+  color: white;
+  font-weight: 600;
+}
+
+.hero-body .subtitle {
+  padding-top: 20px;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* Kết thúc phần navbar */
+
+h3 {
+  font-weight: 600 !important;
+}
+
+/* Phần Video & Text */
+
+.video-and-text {
+  padding: 100px 30px 0px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.video-and-text .is-6 {
+  padding: 25px;
+}
+
+.video-and-text iframe {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .video-and-text iframe {
+    width: 90vw;
+  }
+  .video-and-text {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Video Youtube */
+
+/* Text mô tả kế bên video */
+
+.is-ancestor .is-vertical .tile .tile {
+  padding: 20px;
+}
+
+.video-and-text .title p {
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 16px;
+  color: #6449e7;
+}
+.video-and-text .title h2 {
+  margin-bottom: 35px;
+  font-size: 30px;
+  /* text-transform: uppercase; */
+  line-height: 1.3;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.about-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 0;
+  color: #888;
+}
+
+/* Phần mấy cái box about properties */
+
+.about-us {
+  padding-top: 100px;
+}
+
+.about-us .is-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#about-us-title .title p {
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 16px;
+  color: #6449e7;
+}
+#about-us-title .title h2 {
+  margin-bottom: 35px;
+  font-size: 30px;
+  /* text-transform: uppercase; */
+  line-height: 1.3;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.box {
+  box-shadow: 0px 1px 10px rgb(206, 206, 206);
+  transition: all 0.2s ease-out;
+}
+
+.box-1 {
+  -webkit-animation: pulsate-bck 2.8s ease-in infinite both;
+  animation: pulsate-bck 2.8s ease-in infinite both;
+}
+
+.box-2 {
+  -webkit-animation: pulsate-bck 3.1s ease-out infinite both;
+  animation: pulsate-bck 3.1s ease-out infinite both;
+}
+
+.box-3 {
+  -webkit-animation: pulsate-bck 2.9s ease-in infinite both;
+  animation: pulsate-bck 2.9s ease-in infinite both;
+}
+
+.box-4 {
+  -webkit-animation: pulsate-bck 3.2s ease-out infinite both;
+  animation: pulsate-bck 3.2s ease-out infinite both;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    /* transform: scale(1.05); */
+  }
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+
+.box:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  transform: scale(1.05);
+}
+.box .subtitle {
+  /* background-color: rgb(179, 183, 184) !important; */
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* Phần mấy cái svg overview */
+
+.overview {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.overview-item h1 {
+  padding-top: 10px;
+  margin-bottom: 0px !important;
+}
+
+/* Phần agent list */
+
+.slogan {
+  text-align: center;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 16px;
+  color: #6449e7;
+  font-weight: 600;
+}
+
+.agent-list {
+  position: relative;
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.swiper-container {
+  margin-bottom: 100px;
+  width: 100%;
+  /* height: 300px; */
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(255, 255, 255);
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slider agent */
+
+.single-agent img {
+  max-width: 100%;
+  height: auto;
+}
+
+.single-agent-info {
+  background-color: #fff;
+  padding: 12px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+  transform: translateY(-50%);
+  box-shadow: 0 10px 15px #dddddd63;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.single-agent-info h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.single-agent-info h4 a {
+  color: #333;
+}
+
+.single-agent-info span {
+  padding: 5px;
+  font-weight: 400;
+  color: #888;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.single-agent-info .contact-info {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  color: #888;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.single-agent-info .contact-info .icon i {
+  color: #6449e7;
+  /* font-size: 1000px; */
+}
+.contact-info .text a {
+  color: #888;
+}
+
+/* Kết thúc slider agent */
+
+/* Kết thúc agent list */
+
+/* Phần Partners list */
+
+.partner-list {
+  position: relative;
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  overflow: hidden;
+}
+
+.swiper-container {
+  margin-bottom: 100px;
+  width: 100%;
+  /* height: 300px; */
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(255, 255, 255);
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slider partner */
+
+.partner-list img {
+  text-align: center;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.partner-list img:hover {
+  opacity: 1;
+}
+
+/* Kết thúc slider partner */
+
+/* Kết thúc partner list */
+
+/* Footer */
+
+.footer {
+  margin-top: 100px;
+  border-top: 1px solid #eee;
+}
+
+.footer .content ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer .has-text-center {
+  margin-top: 10px;
+  color: #555555;
+  font-size: 15px;
+}
+
+.footer .content ul li {
+  list-style-type: none;
+  text-align: center;
+  padding: 5px;
+}
+.footer .content ul li a {
+  color: #6e6e6e;
+  font-size: 14px;
+}
+.content ul li a:hover {
+  color: #2e2e2e;
+}
+.footer h6 {
+  text-align: center;
+  color: #555555 !important;
+  font-size: 20px !important;
+  margin-bottom: 25px !important;
+}
+.footer .button {
+  margin-top: 15px;
+}
+.footer .fa {
+  padding-right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.footer .control.has-icons-left .icon.is-left {
+  left: 5px;
+}
+.footer p {
+  font-size: 18px;
+}
+.footer .is-success:hover {
+  background: #0f8438 !important;
+}
+
+.animoBorderLeftRight {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.animoBorderLeftRight::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6449e7;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.animoBorderLeftRight:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.animoPulse {
+  margin-top: 10px;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: #fff;
+  padding: 0.5em 1em;
+  outline: 0;
+  border: none;
+  background-color: #6449e7;
+}
+.animoPulse:hover {
+  cursor: pointer;
+}
+.animoPulse::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 4px solid #6449e7;
+  transform-origin: center;
+  transform: scale(1);
+}
+.animoPulse:hover::before {
+  transition: all 0.75s ease-in-out;
+  transform-origin: center;
+  transform: scale(1.75);
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .footer .bottom p,
+  .footer .has-text-right {
+    text-align: center !important;
+  }
+}
+/* Kết thúc footer */

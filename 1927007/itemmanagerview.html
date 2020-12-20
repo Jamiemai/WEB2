@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Item manager - GEM</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css" />
+    <link rel="stylesheet" href="./assets/admin/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+</head>
+
+<body>
+    <!-- Jumbotron -->
+    <section class="hero is-fullheight" id="jumbotron">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <!-- Navbar -->
+            <nav class="navbar is-dark" id="navbar">
+              <div class="navbar-brand">
+                <a class="navbar-item animoDoubleDashed" href="index.html">
+                  <img 
+                    src="./assets/logo/gem1.png"
+                    alt="Based on Bulma"
+                    width="28"
+                    height="28"
+                  />   GEMSTONE STORE
+                </a>
+                <div
+                  class="navbar-burger burger"
+                  data-target="navbarExampleTransparentExample"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item animoDoubleDashed" href="index.html"> 
+                    Trang chủ
+                  </a>
+                  <a class="navbar-item animoDoubleDashed" href="about.html">
+                    Giới thiệu
+                  </a>
+                  <a class="navbar-item animoDoubleDashed" href="listing.html">
+                    Bảng giá
+                  </a>
+                  <a class="navbar-item animoDoubleDashed" href="">
+                    Thông tin
+                  </a>
+                </div>
+                <div class="navbar-end">
+                    <a class="navbar-item email" href="#">
+                        <span class="icon" style="width: 20px"></span>
+                            <img src="assets/user/img/mail.svg" alt="" />
+                          </span>
+                        <span style="font-style: italic; font-size: 0.9em">cuong.mai@hcmut.edu.vn</span>
+                    </a>
+                  <div class="navbar-item">
+                    <div class="field is-grouped">
+                      <p class="control">
+                        <a class="button is-outlined" href="contact.html">
+                          <span class="icon">
+                            <img src="./assets/user/img/phone.svg" alt="" style="width: 15px;"/>
+                          </span>
+                          <span>Liên Hệ</span>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- mai -->
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-end">
+                    <a  class="navbar-item animoDoubleDashed master-admin-btn" style=" @media only screen and (max-width: 1024px) {{display: none;}};">
+                      Admin
+                    </a>
+    
+                    <div class="navbar-dropdown" style="background-color: #000000a2; border: solid 1px white;">
+<!--     
+                      <a href="#" class="navbar-item admin" style="color: white;">
+                       Sign in
+                      </a> -->
+                      <a href="#" class="navbar-item admin" style="color: white;">
+                       Logout
+                      </a>
+                    </div>
+                  </div>
+                  <!-- mai -->
+                </div>
+              </div>
+            </nav>
+        </div>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body" style="display:block">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Item Manager
+                </h1>
+                <!-- sign up form -->
+                <div class="property-action has-text-centered" style="display:inline-block; padding-bottom: 1rem">
+                    <a href=./assets/addproduct" class="button is-success is-small">Add New Item</a>
+                </div>
+
+                <div style="overflow-x: auto;" class="style-9">
+                    <table class="table is-fullwidth is-hoverable" style="margin-top:1.5rem; width: max-content;">
+                        <thead style="background-color:#6449e7;">
+                            <tr>
+                            <th class="has-text-white"><abbr>Name of gemstone</abbr></th>
+                            <th class="has-text-white"><abbr>id</abbr></th>
+                            <th class="has-text-white">Name</th>
+                            <th class="has-text-white"><abbr >Address</abbr></th>
+                            <th class="has-text-white"><abbr >Price</abbr></th>
+                            <th class="has-text-centered has-text-white">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td>
+                                <div class="buttons" style="display: flex; justify-content: center;">
+                                    <button class="button is-warning is-small is-outlined modify-btn">Modify</button>
+                                    <button class="button is-danger is-small is-outlined delete-btn">Delete</button>
+                                </div>
+                            </td>
+                            </tr>
+                        <tr>
+                            <td>null</td>
+                            <td>null</td>
+                            <td>null</td>
+                            <td>null</td>
+                            <td>null</td>
+                            <td>null</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <nav class="pagination is-centered" aria-label="pagination">
+                    <!-- <a class="pagination-previous">Previous</a>
+                    <a class="pagination-next">Next page</a> -->
+                    <ul class="pagination-list" style = "color:aliceblue">
+                    <li>Page 1 </li>
+                    <li>Page 2 </li>
+                    <li>Page 3</li>
+                    <li>
+                        <a
+                        class="pagination-link is-current"
+                        aria-label="Page 46"
+                        aria-current="page"
+                        > Page 4</a
+                        >
+                    </li>
+                    <li>Page 5</li>
+                    </ul>
+                </nav>
+
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <div id="my-bulma-modal-1" class="modal" style="padding-top: 10rem !important;">
+            <!-- If you want to use backgroundDark property, you might add this tag instead of -->
+            <div class="modal-background susmodal-close-btn"></div>
+
+            <!-- Don't change this id: susmodal-content -->
+            <div class="modal-card susmodal-content">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Message</p>
+
+                <!-- Facultative but you can use the class "susmodal-close-btn" on elements for close the modal -->
+                <button
+                  class="delete susmodal-close-btn"
+                  aria-label="close"
+                ></button>
+              </header>
+              <section class="modal-card-body">
+                    <h1>Are you sure to delete this item?</h1>
+              </section>
+              <footer class="modal-card-foot" style="justify-content: flex-end!important;">
+              <form name="del-form" action="/ltw/admin/itemmanager" method="POST">
+                    <input type="hidden" name="del-id" value="" id="del-id">
+                    <button class="button is-danger" type="submit" name="del-item-sibmit">OK</button>
+              </form>
+              </footer>
+            </div>
+          </div>
+        </div>
+    
+
+
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/listings/js/scripts.js"></script>
+
+
+
+
+
+    <script>
+        class SUSModal { constructor(t = {}) { if (t = Object.assign({}, { id: null, animation: "fade", animationDuration: 200, width: "400px", height: "auto", backgroundDark: !1, finalPosition: "auto" }, t), this.id = t.id, this.animation = t.animation, this.animationDuration = t.animationDuration, this.width = t.width, this.height = t.height, this.finalPosition = t.finalPosition, this.backgroundDark = t.backgroundDark, this.SUSModal = document.getElementById(this.id), this.SUSModalContent = this.SUSModal.querySelector(".susmodal-content"), this.SUSModalShow = !1, this.focusElementsType = "button, input, a, textarea", this.focusElements = Array.from(this.SUSModalContent.querySelectorAll(this.focusElementsType)), this.stylize(), this.SUSModal.querySelectorAll(".susmodal-close-btn").length > 0) { Array.from(this.SUSModal.querySelectorAll(".susmodal-close-btn")).forEach(t => { t.addEventListener("click", () => { this.hide() }) }) } } show() { this.SUSModal.style.display = "block", this.focusElements[0].focus(), this.SUSModal.removeAttribute("aria-hidden"), this.SUSModal.setAttribute("aria-modal", "true"), this.SUSModalContent.classList.contains("susmodal-content-reverse") && (this.SUSModalContent.classList.remove("susmodal-content-reverse"), this.backgroundDark && document.body.classList.remove("susmodal-body-animation-reverse")), this.SUSModalContent.classList.add("susmodal-animation-" + this.animation), this.backgroundDark && document.body.classList.add("susmodal-body-animation"), window.onkeydown = (t => { this.keydownEvent(t) }), window.onclick = (t => { t.target === this.SUSModal && this.hide() }) } hide() { event.preventDefault(), this.SUSModal.setAttribute("aria-hidden", "true"), this.SUSModal.removeAttribute("aria-modal"), this.SUSModalContent.classList.remove("susmodal-content-animation"), this.SUSModalContent.classList.add("susmodal-content-reverse"), this.backgroundDark && document.body.classList.add("susmodal-body-animation-reverse"), setTimeout(() => { this.SUSModal.style.display = "none" }, this.animationDuration), window.onkeydown = void 0, window.onclick = void 0 } catchFocus(t) { t.preventDefault(); let i = this.focusElements.findIndex(t => t === this.SUSModalContent.querySelector(":focus")); !0 === t.shiftKey ? indexsusmodal-- : i++, i >= this.focusElements.length && (i = 0), i < 0 && (i = this.focusElements.length - 1), this.focusElements[i].focus() } keydownEvent(t) { (this.SUSModal && "Escape" === t.key || "Esc" === t.key) && this.hide(), this.SUSModal && "Tab" === t.key && this.catchFocus(t) } stylize() { let t = "margin:" + this.finalPosition + ";"; this.width && (t += "width:" + this.width + ";"), this.height && (t += "height:" + this.height + ";"), this.animationDuration && (t += "animation-duration:" + this.animationDuration + "ms;"), this.SUSModalContent.style.cssText = t, this.backgroundDark && (document.body.style.cssText = "animation-duration:" + this.animationDuration + "ms;") } };
+
+        const MySUSModal1 = new SUSModal({
+            id: 'my-bulma-modal-1',
+            animation: "top"
+        });
+
+        $(document).on("click", ".delete-btn", function () {
+            MySUSModal1.show();       
+            let child = $(this).closest('tr').children('.itemid').text();       
+        $('#del-id').val(child);
+        });
+
+        $(document).on("click", ".modify-btn", function () {     
+            let child = $(this).closest('tr').children('.itemid').text();
+            //console.log(child) ;
+            window.location.replace('assets/updateitem/' + child);
+        });
+
+
+    </script>
+    
+
+
+
+
+
+    
+</body>
+
+</html>

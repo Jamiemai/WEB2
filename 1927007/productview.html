@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GEM</title>
+    <link rel="stylesheet" href="./assets/css/bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="./assets/home/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+  </head>
+  <body>
+    <!-- Jumbotron -->
+    <section class="hero is-fullheight" id="jumbotron">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <!-- Navbar -->
+        <nav class="navbar is-dark" id="navbar">
+          <div class="navbar-brand">
+            <a class="navbar-item animoDoubleDashed" href="index.html">
+              <img 
+                src="./assets/logo/gem1.png"
+                alt="Based on Bulma"
+                width="28"
+                height="28"
+              />   GEMSTONE STORE
+            </a>
+            <div
+              class="navbar-burger burger"
+              data-target="navbarExampleTransparentExample"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item animoDoubleDashed" href="index.html"> 
+                Trang chủ
+              </a>
+              <a class="navbar-item animoDoubleDashed" href="about.html">
+                Giới thiệu
+              </a>
+              <a class="navbar-item animoDoubleDashed" href="listing.html">
+                Bảng giá
+              </a>
+              <!-- <a class="navbar-item animoDoubleDashed" href="#">
+                Thông tin
+              </a> -->
+            </div>
+            <div class="navbar-end">
+              <a class="navbar-item email" href="#">
+                <span style="font-style: italic; font-size: 0.9em">cuong.mai@hcmut.edu.vn</span>
+              </a>
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="button is-outlined" href="contact.html">
+                      <span>Liên Hệ</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <!-- mai -->
+              <div class="navbar-item has-dropdown is-hoverable">
+                <div class="navbar-end">
+                <a  class="navbar-item animoDoubleDashed master-admin-btn" style=" @media only screen and (max-width: 1024px) {{display: none;}};">
+                  Login
+                </a>
+
+                <div class="navbar-dropdown" style="background-color: #000000a2; border: solid 1px white;">
+
+                  <a href="#" class="navbar-item admin" style="color: white;">
+                   Sign in
+                  </a>
+                  <a href="#" class="navbar-item admin" style="color: white;">
+                   Logout
+                  </a>
+                </div>
+              </div>
+              <!-- mai -->
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="swiper-container-0">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="background: url(./assets/home/img/gallery/2.jpg);"
+            ></div>
+            <!-- <div
+              class="swiper-slide"
+              style="background: url('<?php echo $data['item']['img_slide1']; ?>'); background-size: cover; background-position: center center;"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background: url('<?php echo $data['item']['img_slide2']; ?>'); background-size: cover;  background-position: center center;"
+            ></div> -->
+            <!-- <div
+              class="swiper-slide"
+              style="background: url('<?php echo $data['item']['img_slide3']; ?>'); background-size: cover;  background-position: center center;"
+            ></div> -->
+            <div class="swiper-button-prev" style="color: #ffffff;"></div>
+            <div class="swiper-button-next" style="color: #ffffff;"></div>
+            <div class="content">
+              <!-- <h1><?php echo $data['item']['item_name'] ?></h1> -->
+              <div class="trend-open">
+                <p>Price/ 500$ </p>
+                <!-- <p>Starts from / $<?php echo $data['item']['price'] ?></p> -->
+              </div>
+              <a class="fancy-button" href="#">
+                Send Query
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content gioi thieu -->
+    <section class="section about-us">
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical">
+              <div class="tile">
+                <div class="tile is-4">
+                  <article class="tile is-child" id="about-us-title">
+                    <p class="title">Product</p>
+                    <!-- <div class="content">
+                      <p>
+                      <?php echo $data['item']['about'] ?>
+                      </p>
+                    </div> -->
+                  </article>
+                </div>
+                <div class="tile is-parent is-vertical">
+                  <article
+                    class="tile is-child box box-1"
+                    style="background-color: #6449e7;"
+                  >
+                    <figure class="image is-96x96">
+                      <img
+                        src="./assets/home/img/info/diamond.png"
+                        alt="diamond"
+                      />
+                    </figure>
+                    <p class="subtitle" style="color: white;">
+                      Diamond
+                    </p>
+                    <div class="content" style="color: white;">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Officia aliquid cumque
+                      </p>
+                    </div>
+                  </article>
+                  <article class="tile is-child box box-2">
+                    <figure class="image is-96x96">
+                      <img
+                        src="./assets/home/img/info/ring.png"
+                        alt="ring"
+                      />
+                    </figure>
+                    <p class="subtitle">Ring</p>
+                    <div class="content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Officia aliquid cumque.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child box box-3">
+                    <figure class="image is-96x96">
+                      <img
+                        src="./assets/home/img/info/earing.png"
+                        alt="earing"
+                      />
+                    </figure>
+                    <p class="subtitle">Earing</p>
+                    <div class="content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Officia aliquid cumque.
+                      </p>
+                    </div>
+                  </article>
+                  <article
+                    class="tile is-child box box-4"
+                    style="background-color: #fa6742;"
+                  >
+                    <figure class="image is-96x96">
+                      <img
+                        src="./assets/home/img/info/garnet.png"
+                        alt="garnet"
+                      />
+                    </figure>
+                    <p class="subtitle" style="color: white;">Garnet</p>
+                    <div class="content" style="color: white;">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin ornare magna eros
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Similar Product-->
+    <div class="container similar-properties">
+      <h3 class="subtitle is-3" style="text-align: center;">
+        Similar Product
+      </h3>
+      <div class="swiper-container-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(assets/home/img/featured/featured_1.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(assets/home/img/featured/featured_1.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Diamond ring</h3>s
+                <a href="#" class="btn btn-5">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(assets/home/img/featured/featured_8.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(assets/home/img/featured/featured_8.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Diamond ring</h3>
+                <a href="#" class="btn btn-5 ">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(assets/home/img/featured/featured_9.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(assets/home/img/featured/featured_9.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Diamond ring</h3>
+                <a href="#" class="btn btn-5">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(assets/home/img/featured/featured_10.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(assets/home/img/featured/featured_10.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Luxury Ruby</h3>
+                <a href="#" class="btn btn-5">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(assets/home/img/featured/featured_11.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(assets/home/img/featured/featured_11.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Rainbow necklace</h3>
+                <a href="#" class="btn btn-5">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <footer class="footer has-background-white-ter" id="my-footer">
+      <div class="content has-text-centered has-text-white">
+        <div class="columns is-offset-1">
+          <div class="column">
+            <a href="#" class="footer-logo animoBorderLeftRight">
+              <img
+                src="./assets/logo/gem2.png"
+                alt="Bulma: a modern CSS framework based on Flexbox"
+                width="112"
+                height="28"
+              />
+            </a>
+            <p class="has-text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="column">
+            <h6>Tìm kiếm nhiều</h6>
+            <ul>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Thông tin sản phẩm</a>
+              </li>
+              <li>
+                <a href="#" class="animoBorderLeftRight"> Đánh giá tốt</a>
+              </li> 
+              <li>
+                <a href="#" class="animoBorderLeftRight">Sản phẩm mua nhiều</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Liên hệ nhanh</h6>
+            <ul>
+              <li><a href="#" class="animoBorderLeftRight">Giới thiệu</a></li>
+              <li><a href="#" class="animoBorderLeftRight">Contact us</a></li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Chính sách</a>
+              </li>
+              <li><a href="#" class="animoBorderLeftRight">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Đăng Kí</h6>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-medium" type="email" placeholder="Email" />
+              <span class="icon is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+            <button class="animoPulse">
+              <span>Subcribe</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/home/js/scripts.js"></script>
+  </body>
+</html>
